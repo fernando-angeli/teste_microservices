@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/health")
-public class ApiGatewayController {
+@RequestMapping("/teste")
+public class GatewayController {
 
     @GetMapping
-    public ResponseEntity<String> health(){
-        return ResponseEntity.ok().body("Api Gateway rodando.");
+    public ResponseEntity<String> teste(){
+        return ResponseEntity.ok().body("Gateway rodando.");
     }
 }
